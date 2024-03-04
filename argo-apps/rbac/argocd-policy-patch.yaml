@@ -15,6 +15,12 @@ spec:
     - apiGroups:
       - "*"
       kinds:
+      - Securesign
+      - Fulcio
+      - Rekor
+      - Tuf
+      - Trillian
+      - CTlog
       - KeycloakUser
       - Keycloak
       - KeycloakClient
