@@ -1,0 +1,24 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/agiertli/rhtas.git
+    targetRevision: HEAD
+argo:
+  namespace: openshift-gitops
+  destination: tooling
+  project: rhtas-project      
+
+applications:
+   - name: argocd-rbac
+     path: rbac
+     destination: openshift-gitops
+
+   - name: keycloak-install
+     path: keycloak-install
+     destination: keycloak-system
+
+   - name: rhtas-install
+     path: rhtas-install
+     destination: rhtas-system
+    
