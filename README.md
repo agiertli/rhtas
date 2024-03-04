@@ -1,6 +1,9 @@
 # Overview
 
-This repository install RHTAS with integrated RH-SSO (used as OIDC Provider for Fulcio) on OpenShift (tested with 4.14). The installation is backed by ArgoCD.
+This repository install default instance of [Red Hat Trusted Artifact Signer](https://developers.redhat.com/blog/2023/11/15/announcing-red-hat-trusted-artifact-signer-rhtas-tech-preview) with integrated RH-SSO (used as OIDC Provider for Fulcio) on OpenShift (tested with 4.14). The installation is backed by ArgoCD.
+[Following users](argo-apps/keycloak-install/user.yaml) are available in RH-SSO.
+
+Follow
 
 # Usage
 
