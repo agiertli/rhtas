@@ -1,6 +1,9 @@
 apiVersion: keycloak.org/v1alpha1
 kind: KeycloakClient
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "2"
   labels:
     app: sso
   name: sigstore
