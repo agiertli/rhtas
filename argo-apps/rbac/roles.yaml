@@ -8,6 +8,7 @@ rules:
    - keycloak.org
   resources: 
     - keycloaks
+    - keycloakclients
   verbs: 
    - '*'
 - apiGroups: 
