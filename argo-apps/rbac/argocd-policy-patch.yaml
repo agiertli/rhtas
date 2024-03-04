@@ -15,6 +15,7 @@ spec:
     - apiGroups:
       - "*"
       kinds:
+      - KeycloakUser
       - Keycloak
       - KeycloakClient
       - KeycloakRealm
