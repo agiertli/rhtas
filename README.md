@@ -1,3 +1,7 @@
+# Overview
+
+This repository install RHTAS with integrated RH-SSO (used as OIDC Provider for Fulcio) on OpenShift (tested with 4.14). The installation is backed by ArgoCD.
+
 # Usage
 
 1) Fix [argo-apps/rhtas-install/values.yaml](argo-apps/rhtas-install/values.yaml) so it fits your cluster
