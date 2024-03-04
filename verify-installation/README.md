@@ -16,6 +16,8 @@ export SIGSTORE_OIDC_ISSUER=$COSIGN_OIDC_ISSUER
 export SIGSTORE_REKOR_URL=$COSIGN_REKOR_URL
 export REKOR_REKOR_SERVER=$COSIGN_REKOR_URL
 
+cosign initialize
+
 docker login -u="USERNAME" -p="PASSWORD" quay.io
 docker build -t cosign-test-docker-$(date +%m-%d) . -f Containerfile
 docker tag cosign-test-docker-$(date +%m-%d) quay.io/USERNAME/cosign-test-docker-$(date +%m-%d)
