@@ -9,6 +9,7 @@ rules:
   resources: 
     - keycloaks
     - keycloakclients
+    - keycloakrealms
   verbs: 
    - '*'
 - apiGroups: 
