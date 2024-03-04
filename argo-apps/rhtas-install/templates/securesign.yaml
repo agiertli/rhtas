@@ -21,7 +21,7 @@ spec:
     config:
       OIDCIssuers:
         'https://keycloak-keycloak-system.apps.{{ $.Values.baseDomain }}/auth/realms/sigstore':
-          ClientID: trusted-artifact-signer
+          ClientID: sigstore
           IssuerURL: 'https://keycloak-keycloak-system.apps.{{ $.Values.baseDomain }}/auth/realms/sigstore'
           Type: email
     externalAccess:
