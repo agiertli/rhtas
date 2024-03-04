@@ -9,4 +9,4 @@ cd install/
 ./install.sh -p password1!
 ```
 
-4) Verify installation using `verify-installation` folder
+4) Verify installation using [verify-installation](verify-installation/README.md) folder
