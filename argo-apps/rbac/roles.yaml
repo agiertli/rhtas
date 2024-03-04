@@ -5,6 +5,12 @@ metadata:
   name: custom-argocd-role
 rules:
 - apiGroups: 
+   - keycloak.org
+  resources: 
+    - keycloaks
+  verbs: 
+   - '*'
+- apiGroups: 
    - sonatype.com
   resources: 
     - NexusRepo
